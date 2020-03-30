@@ -8,7 +8,7 @@ function ImageDetails() {
   const { selectedId, fetchAssetPath } = useContext(ImageContext);
   let [selectedImg, selectImg] = useState({});
   let [loading, setLoading] = useState(false);
-  let [scannedText, changeText] = useState("Click 'Scan Now' to fetch image text");
+  let [scannedText, changeText] = useState('');
   const imageStore = 'https://74k4rzrsqubz5ma3f-mock.stoplight-proxy.io/api/v1/images';
 
   const fetchOCR = async () => {
@@ -29,6 +29,7 @@ function ImageDetails() {
         },
       });
       selectImg(data);
+      changeText(''); // Reset scanned text
     };
     fetchImage();
   }, [selectedId]);
@@ -81,7 +82,7 @@ function ImageDetails() {
           </div>
         </div>
         <div className="scanned-text">
-          {scannedText}
+          {scannedText || "Click 'Scan Now' to fetch image text"}
         </div>
       </div>
     </Fragment>
