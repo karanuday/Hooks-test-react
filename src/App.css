@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+hr {
+  border: 2px solid lightgrey;
+  margin-bottom: 50px;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.carousel-control-next, .carousel-control-prev {
+  color:black;
+  background: black;
+  opacity: 1;
+  width: 5%;
+  height: 25%;
+  top: 30%;
+}
+.home-page {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px auto;
+}
+.slider {
+  margin-bottom: 100px;
+  width: 100%;
+}
+.img-grid {
+  background: lightgrey;
+  height: 200px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.carousel-indicators {
+  bottom: -30%;
+}
+.carousel-indicators li {
+  border-bottom: 10px solid #2196f3;
+}
+.item-details-container {
+  padding: 20px 25px;
+  border: 1px solid lightgrey;
+}
+.item-details h3, .slider h3 {
+  text-align: left;
+}
+
+.item-details-container-desc {
+  text-align: left;
+}
+.item-details-container-image {
+  float: left;
+  border: 2.5px solid black;
+  border-radius: 5px;
+  margin: 0 20px 20px 0;
+}
+.item-details-container-feature {
+  text-align: left;
+  clear: left;
+}
+.item-details-container-feature ol {
+  padding-left: 20px;
+}
+.scanned-text {
+  padding: 40px;
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  font-weight: bold;
+  font-size: 36px;
+  color: gray;
+}
